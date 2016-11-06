@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A regular English-speaking meet-up in Cologne, Germany">
+  <meta name="author" content="Antony Seedhouse">
+  <title>Thursday Night Drinks Cologne</title>
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/heroic-features.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Page Content -->
+  <div class="container">
+    <!-- Jumbotron Header -->
+    <header class="jumbotron hero-spacer">
+      <h1>Thursday Night Drinks Cologne</h1>
+      <p>A regular English-speaking meet-up in Cologne, Germany</p>
+      <p>All are welcome. Native English speakers, people who like speaking English,
+        ex-pats, residents, travellers passing through - come join us for Thursday
+        Night Drinks</p>
+      <p>
+        <a class="btn btn-primary btn-large">Follow us on Toytown Germany</a>
+        <a class="btn btn-primary btn-large">Like us on Facebook</a>
+        <a class="btn btn-primary btn-large">Subscribe to our Facebook events</a>
+      </p>
+    </header>
+    <hr>
+    <!-- Title -->
+    <div class="row">
+      <div class="col-lg-12">
+        <h3>Upcoming events</h3> </div>
+    </div>
+    <!-- /.row -->
+    <!-- Page Features -->
+    <div class="row text-center" id="events">
+      <div v-for="event in events" class="col-md-3 col-sm-6 hero-feature">
+        <div class="thumbnail">
+          <div class="caption">
+            <h3>{{ event.begin | date }}</h3>
+            <h4>{{ event.location }}</h4>
+            <p>Weyerstraße 84, Cologne 50676</p>
+            <p>
+              <a href="#" class="btn btn-primary">Facebook</a> <a href="#" class="btn btn-default">Google Maps</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+    <hr>
+    <!-- Footer -->
+    <footer>
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © Antony Seedhouse 2016</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- /.container -->
+</body>
+
+</html>
